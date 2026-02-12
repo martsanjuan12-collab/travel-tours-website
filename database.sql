@@ -1,0 +1,43 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS tours_booking;
+USE tours_booking;
+
+-- Admin users
+CREATE TABLE IF NOT EXISTS admins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
+-- Tours catalog
+CREATE TABLE IF NOT EXISTS tours (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(150) NOT NULL,
+  description TEXT NOT NULL,
+  location VARCHAR(100) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  rating DECIMAL(2, 1) DEFAULT 0,
+  image VARCHAR(255) NOT NULL
+);
+
+-- Bookings
+CREATE TABLE IF NOT EXISTS bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  tour_id INT NOT NULL,
+  date DATE NOT NULL,
+  guests INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT bookings_tour_fk FOREIGN KEY (tour_id) REFERENCES tours(id) ON DELETE CASCADE
+);
+
+-- Contact messages
+CREATE TABLE IF NOT EXISTS messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  message TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
