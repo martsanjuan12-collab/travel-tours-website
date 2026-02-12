@@ -1,5 +1,7 @@
-# TODO: Fix Category Filter on tours.php
+# TODO: Make Related Tours Smaller and More Compact
 
-- [x] Add "Nature" option to the category select dropdown in tours.php
-- [x] Update script.js to implement category and price filtering functionality
-- [x] Test the filtering to ensure all 4 categories work correctly
+- [x] Update .related-tours grid-template-columns from minmax(250px, 1fr) to minmax(200px, 1fr)
+- [x] Update .related-tours gap from 20px to 15px
+- [x] Update .related-tour-card img height from 140px to 120px
+- [x] Update .related-tour-body padding from 16px to 12px
+- [x] Update .related-tour-body h3 font-size from 1.1rem to 1rem
