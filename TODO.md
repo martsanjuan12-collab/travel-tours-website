@@ -1,7 +1,6 @@
-# TODO: Make Related Tours Smaller and More Compact
+# TODO: Move Search Bar Next to Logo in tours.php and tour.php
 
-- [x] Update .related-tours grid-template-columns from minmax(250px, 1fr) to minmax(200px, 1fr)
-- [x] Update .related-tours gap from 20px to 15px
-- [x] Update .related-tour-card img height from 140px to 120px
-- [x] Update .related-tour-body padding from 16px to 12px
-- [x] Update .related-tour-body h3 font-size from 1.1rem to 1rem
+## Steps to Complete:
+- [x] Move the mini-search form out of nav-links and place it next to the logo in tours.php.
+- [x] Move the mini-search form out of nav-links and place it next to the logo in tour.php.
+- [ ] Test the changes by viewing both pages to confirm the search bar is now next to the logo.
