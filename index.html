@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago Tours | Home</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a class="logo" href="index.html">Voyago Tours</a>
+        <nav>
+          <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
+          <ul class="nav-links" data-nav-links>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Find unforgettable tours and activities worldwide.</h1>
+        <p>
+          Browse curated experiences, from city highlights to food tastings and outdoor adventures.
+        </p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search tours, attractions...">
+          <button class="btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured categories</h2>
+        <p class="section-subtitle">Pick a theme and start exploring.</p>
+        <div class="category-grid">
+          <div class="category-card">
+            <h3>City Tours</h3>
+            <p>Guided walks, historic landmarks, and skyline views.</p>
+          </div>
+          <div class="category-card">
+            <h3>Adventure</h3>
+            <p>Kayaking, hiking, and adrenaline-filled escapes.</p>
+          </div>
+          <div class="category-card">
+            <h3>Food &amp; Drink</h3>
+            <p>Local flavors, chef-led tastings, and night markets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Suggested tours</h2>
+        <p class="section-subtitle">Handpicked experiences travelers love.</p>
+        <div class="tour-grid" data-tour-grid></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">© 2024 Voyago Tours. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
