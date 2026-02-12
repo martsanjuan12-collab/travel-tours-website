@@ -1,6 +1,5 @@
-# TODO: Standardize Footer Across Pages
+# TODO: Fix Category Filter on tours.php
 
-- [ ] Update footer in tours.html (add class="site-footer")
-- [ ] Update footer in contact.html (add class="site-footer")
-- [x] about.html footer already matches index.html
-- [x] tour.html footer already matches index.html
+- [x] Add "Nature" option to the category select dropdown in tours.php
+- [x] Update script.js to implement category and price filtering functionality
+- [x] Test the filtering to ensure all 4 categories work correctly
